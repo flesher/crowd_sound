@@ -9,14 +9,17 @@ class ApiController < ApplicationController
 	end	
 
 	def getToken
-		#todo - movie Rdio init to initializers?
-		rdio = Rdio.init("x8zxcv2b35bhmm4yj86xa3u6","Ey83GMjKBY")
-		json_string = rdio.call("getPlaybackToken", {"domain" => "localhost"})
+		#rdio = Rdio.init("x8zxcv2b35bhmm4yj86xa3u6","Ey83GMjKBY")
+		json_string = RDIO_OBJ.call("getPlaybackToken", {"domain" => "localhost"})
 
-		@decoded = ActiveSupport::JSON.decode(json_string)
-		
-		@status = @decoded["status"]
-		@key = @decoded["result"]
+
+		respond_to do |format|
+			format.json{render :json=>json_string}
+		end
+
+	end
+
+	def findArtist
 
 	end
 
