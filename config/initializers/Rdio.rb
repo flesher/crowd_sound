@@ -1,0 +1,4 @@
+RDIO_KEY = "x8zxcv2b35bhmm4yj86xa3u6"
+RDIO_SECRET = "Ey83GMjKBY"
+
+RDIO_OBJ = Rdio.init(RDIO_KEY,RDIO_SECRET)
