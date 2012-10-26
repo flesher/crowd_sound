@@ -563,3 +563,20 @@ Served asset /application.js - 304 Not Modified (22ms)
 
 Started GET "/assets/api.js?body=1" for 127.0.0.1 at 2012-10-25 10:31:50 -0600
 Served asset /api.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-10-26 15:13:22 -0600
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (66ms)
+
+
+Started GET "/api/token.js" for 127.0.0.1 at 2012-10-26 15:13:29 -0600
+Processing by ApiController#getToken as JS
+Completed 406 Not Acceptable in 247ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/token.json" for 127.0.0.1 at 2012-10-26 15:13:32 -0600
+Processing by ApiController#getToken as JSON
+Completed 200 OK in 356ms (Views: 0.2ms | ActiveRecord: 0.0ms)
